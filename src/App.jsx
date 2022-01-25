@@ -1,10 +1,29 @@
 import { useEffect } from 'react';
-import { animeData, animeDataThen } from './services/promise-me';
+import {
+  animeData,
+  animeDataThen,
+  fifthAwait,
+  fifthThen,
+  fourthAwait,
+  pixelAwait,
+  pixelAwaitThen,
+  thenFourth,
+  thenThird,
+  thirdTry,
+} from './services/promise-me';
 
 export default function App() {
   useEffect(() => {
-    animeData();
-    animeDataThen();
+    // animeData();
+    // animeDataThen();
+    // pixelAwait();
+    // pixelAwaitThen();
+    // thirdTry();
+    // thenThird();
+    // fourthAwait();
+    // thenFourth();
+    fifthAwait();
+    fifthThen();
   });
   // const awaitTest = animeData();
   // console.log('await', awaitTest);
